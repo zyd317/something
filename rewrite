@@ -1,0 +1,7 @@
+# 本项目使用转发
+domain test.zyd.com {
+    location / {
+        proxy_pass http://127.0.0.1:8008/;
+        proxy_set_header Host test.zyd.com;
+    }
+}
