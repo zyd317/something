@@ -8,7 +8,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        echartStyle: './echarts/index.css',
         echartJs: './echarts/index.js'
     },
     output: {
@@ -30,21 +29,13 @@ module.exports = {
                 }]
             },
             {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: "css-loader"
-                })
+                test: /\.(scss|sass|css)$/,  // pack sass and css files
+                loader: ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader!postcss-loader!sass-loader"})
             },
+            { test : /\.css$/, loader: 'css-loader' },
             {
-                test: /\.[s]?css$/,
-                use: [{
-                    loader: 'style-loader'
-                },{
-                    loader: 'css-loader'
-                },{
-                    loader: 'sass-loader'
-                }]
+                test: /\.html/,
+                loader: 'html',
             }
         ]
     }

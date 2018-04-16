@@ -1,0 +1,22 @@
+@import '../reset.scss';
+
+.m-place-holder {
+    animation: breathe 2s  infinite linear;
+    -webkit-animation: breathe 2s  infinite linear;
+}
+@keyframes breathe {
+    from {opacity: 1;}
+    to {opacity: .5;}
+}
+/*价格日历整个部分*/
+.m-price-trend.m-place-holder {
+    height: 100%;
+}
+.m-echarts {
+    height: 160px;
+    margin-left: -16px;
+    margin-top: 12px;
+}
+.m-echarts .m-container{
+    height: 100%;
+}
