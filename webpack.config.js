@@ -8,7 +8,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        echartJs: './echarts/index.js'
+        echartJs: './echarts/index.js' // js入口配置
     },
     output: {
         path: path.join(__dirname, 'build'),
@@ -17,25 +17,20 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(), // 模块热更新
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("styles.css") // css出口配置。有js引入的css都会被打包在这个里面
     ],
     module: {
         rules:[
             {
-                test: /\.js[x]?$/,
+                test: /\.js[x]?$/, // babel解析js
                 exclude: /node_modules/,
                 use: [{
                     loader: "babel-loader?presets[]=es2015&presets[]=react"
                 }]
             },
             {
-                test: /\.(scss|sass|css)$/,  // pack sass and css files
+                test: /\.(scss|sass|css)$/,  // css,autoprefix解析css，scss。。。
                 loader: ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader!postcss-loader!sass-loader"})
-            },
-            { test : /\.css$/, loader: 'css-loader' },
-            {
-                test: /\.html/,
-                loader: 'html',
             }
         ]
     }

@@ -1,0 +1,149 @@
+body {
+  font-size: .14rem;
+  font-family: arial,helvetica,STHeitiSC-Light,Heiti SC,droidsansfallback,dengxian,microsoft yahei;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body, div, li, ul, h1, h2, h3, p {
+  margin: 0;
+  padding: 0; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+ul, li {
+  list-style: none; }
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+ol {
+  padding: 0; }
+
+button {
+  outline: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.eot");
+  /* IE9*/
+  src: url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.eot?#iefix") format("embedded-opentype"), url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.woff") format("woff"), url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.ttf") format("truetype"), url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.svg#flight_cms_qzz") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+input::-webkit-input-placeholder {
+  color: #D0D6D6; }
+
+input::-moz-placeholder {
+  color: #D0D6D6; }
+
+input:-moz-placeholder {
+  color: #D0D6D6; }
+
+input:-ms-input-placeholder {
+  color: #D0D6D6; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+@charset "UTF-8";
+body {
+  font-size: .14rem;
+  font-family: arial,helvetica,STHeitiSC-Light,Heiti SC,droidsansfallback,dengxian,microsoft yahei;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body, div, li, ul, h1, h2, h3, p {
+  margin: 0;
+  padding: 0; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+ul, li {
+  list-style: none; }
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+ol {
+  padding: 0; }
+
+button {
+  outline: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.eot");
+  /* IE9*/
+  src: url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.eot?#iefix") format("embedded-opentype"), url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.woff") format("woff"), url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.ttf") format("truetype"), url("//s.qunarzz.com/flight_cms_qzz/fonts/1.0.23/flight_cms_qzz.svg#flight_cms_qzz") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+input::-webkit-input-placeholder {
+  color: #D0D6D6; }
+
+input::-moz-placeholder {
+  color: #D0D6D6; }
+
+input:-moz-placeholder {
+  color: #D0D6D6; }
+
+input:-ms-input-placeholder {
+  color: #D0D6D6; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+.m-place-holder {
+  animation: breathe 2s  infinite linear;
+  -webkit-animation: breathe 2s  infinite linear; }
+
+@-webkit-keyframes breathe {
+  from {
+    opacity: 1; }
+  to {
+    opacity: .5; } }
+
+@keyframes breathe {
+  from {
+    opacity: 1; }
+  to {
+    opacity: .5; } }
+
+/*价格日历整个部分*/
+.m-price-trend.m-place-holder {
+  height: 100%; }
+
+.m-echarts {
+  height: 160px;
+  margin-left: -16px;
+  margin-top: 12px; }
+
+.m-echarts .m-container {
+  height: 100%; }

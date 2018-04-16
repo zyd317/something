@@ -1,7 +1,7 @@
 /**
  * Created by yidi.zhao on 2018/4/16.
  *
- * css资源在js中引入会被webpack直接打包成js入口的同名文件，不需要再配置css的入口
+ * 被js引入的css，会因为webpack的配置new ExtractTextPlugin("styles.css") 被自动加上前缀之后打包成styles.css
  */
 import PriceTrend from './js/price';
 import data from './js/data.js';
