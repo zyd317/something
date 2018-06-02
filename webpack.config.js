@@ -8,7 +8,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        echartJs: './echarts/index.js' // js入口配置
+        echartJs: './echarts/index.js', // js入口配置
+        echartLineJs: './echartsLine/index.js'
     },
     output: {
         path: path.join(__dirname, 'build'),
